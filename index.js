@@ -74,3 +74,10 @@ function fourthfun(){
     removecontent2.classList.remove("active");
     removecontent3.classList.remove("active");
 }
+let count = 0;
+let displayCount = document.getElementById("displayCount");
+let countButton = document.getElementById("secondbtn");
+countButton.onclick = function(){
+    count++;
+    displayCount.textContent = count;
+  }
